@@ -3,8 +3,8 @@ services:
     image: andynechen/naiveproxy:20220825
     restart: always
     volumes:
-      - ./config:/etc/naiveproxy
-      - ./html:/var/www/html
+      - ./Caddy/Caddyfile:/etc/naiveproxy/Caddyfile
+      - ./var/www/html:/var/www/html
     ports:
       - "80:80"
       - "443:443"
